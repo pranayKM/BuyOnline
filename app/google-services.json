@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "4658975310",
+    "firebase_url": "https://buyonmobile-7defb.firebaseio.com",
+    "project_id": "buyonmobile-7defb",
+    "storage_bucket": "buyonmobile-7defb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4658975310:android:d842af33038fad5c",
+        "android_client_info": {
+          "package_name": "info.androidhive.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4658975310-e1o7mrpvmtvs0graffaekuiq5g8vdp3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUVgr5diALudAADJ3hZVWMMHFCFr-y3hw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

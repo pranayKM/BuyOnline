@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notificationsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/emptyTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Notifications"
+        android:textColor="@color/gray_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</LinearLayout>

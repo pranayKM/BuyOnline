@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="info.androidhive.firebase.BuyerPreferencesActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/cmake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Make"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/cmodel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Model"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/cyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Year"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/ccolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Color"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/cpriceStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car Price Start"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/cpriceEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Car Price End"
+            android:imeActionId="@+id/login"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/csearchBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@color/colorAccent2"
+                android:text="Search Cars"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/cpreferenceBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="70dp"
+                android:background="@color/colorAccent2"
+                android:text="Save Preferences"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

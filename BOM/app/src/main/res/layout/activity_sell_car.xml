@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/carImageVw"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/uploadIv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="15dp"
+                    android:background="@android:drawable/ic_menu_camera"
+                    android:padding="10dp"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailTxtLt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/carNameEt"
+                    style="@style/SellerEditTextStyle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:singleLine="true"
+                    android:hint="Car Name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/carModelEt"
+                    style="@style/SellerEditTextStyle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:singleLine="true"
+                    android:hint="Car Model"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/carYearEt"
+                    style="@style/SellerEditTextStyle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:singleLine="true"
+                    android:hint="Year"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/carPriceEt"
+                    style="@style/SellerEditTextStyle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Car Price"
+                    android:singleLine="true"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
